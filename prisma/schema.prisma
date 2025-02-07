@@ -28,7 +28,7 @@ model Pedido {
   nombre           String
   nombreCliente    String  
   direccionCliente    String 
-  precio           Float
+  
   fechaHora  DateTime
   repartidor           Repartidor   @relation(fields: [repartidorId], references: [id])
   repartidorId         Int
@@ -39,7 +39,7 @@ model Pedido {
 model Pizza {
   id     Int    @id @default(autoincrement())
   nombre String
-  via    String
+  precio    Float
   pedidos Pedido[]
   @@map("pizzas")
 }
