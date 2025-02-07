@@ -30,7 +30,7 @@ async function obtenerPedido(id) {
         where: { id: +id },
         include: {
             
-            repartidor: true/* relacion entre repartidores */
+            repartidores: true/* relacion entre repartidores */
         }
     })
     return pedido
