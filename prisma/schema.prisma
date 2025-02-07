@@ -25,7 +25,7 @@ model Repartidor {
 
 model Pedido {
   id               Int      @id @default(autoincrement())
-  nombre           String
+  
   nombreCliente    String  
   direccionCliente    String 
   

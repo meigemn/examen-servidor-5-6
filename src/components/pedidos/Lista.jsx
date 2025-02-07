@@ -8,7 +8,7 @@ export async function Pedidos() {
                 <li key={pedido.id} className="bg-slate-200 rounded-lg p-4 shadow-md mb-4 w-full md:w-1/2 lg:w-1/3">
                     <h2 className="text-2xl font-bold mb-2">
                         <Link href={`/pedidos/${pedido.id}`} className="hover:underline">
-                            {pedido.nombre}
+                            {pedido.id}
                         </Link>
                     </h2>
                     <p className="text-gray-700 italic mb-2">Fecha de Pedido: {pedido.fechaHora.toLocaleDateString()}</p>

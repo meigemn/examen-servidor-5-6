@@ -29,7 +29,7 @@ async function obtenerPedido(id) {
     const pedido = await prisma.pedido.findUnique({
         where: { id: +id },
         include: {
-            pizzas: true,/* Revisar en un futuro. puede que haya que quitarlo */
+            
             repartidor: true/* relacion entre repartidores */
         }
     })

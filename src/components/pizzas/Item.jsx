@@ -6,8 +6,8 @@ export default async function Pizzas({ id }) {
     if (!pizza) notFound()
     return (
         <div className="bg-white rounded-lg shadow-lg p-4 flex items-center justify-center flex-col">
-            <p className="text-2xl font-bold text-center">Nombre: {pizza.nombre}</p>
-            <p className="text-gray-700 italic text-center">Precio: {pizza.via}</p>
+            <p className="text-2xl font-bold text-center">Id: {pizza.id}</p>
+            <p className="text-gray-700 italic text-center">Precio: {pizza.precio}</p>
         </div>
     );
 }
